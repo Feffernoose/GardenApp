@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/green">
 
     <FrameLayout
         android:id="@+id/frameLayout"
@@ -12,13 +14,21 @@
         <ImageView
             android:id="@+id/plant_image_view"
             android:layout_width="match_parent"
-            android:layout_height="225dp">
+            android:layout_height="225dp"
+            android:src="@drawable/appletree"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"
+            android:padding="0dp"
+            >
         </ImageView>
 
-        <TextView
-            android:id="@+id/plat_text_view"
+        <WebView
+            android:id="@+id/plant_text_view"
             android:layout_width="match_parent"
             android:layout_height="503dp"
-            android:layout_marginTop="225dp"></TextView>
+            android:layout_marginTop="225dp"
+            tools:ignore="WebViewLayout">
+
+        </WebView>
     </FrameLayout>
 </LinearLayout>

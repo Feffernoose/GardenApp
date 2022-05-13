@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SecondActivity.class);
 
-                replaceFragment(new PlantInfoFragment());
+                replaceFragment(new AppleFragment());
                 startActivity(intent);
             }
         });
